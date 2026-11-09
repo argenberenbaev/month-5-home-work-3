@@ -22,7 +22,6 @@ function Search({ search }) {
     queryKey: ["search", search],
     queryFn: () => searchProducts(search),
 
-    // Запрос выполняется только при наличии трех символов
     enabled: search.trim().length >= 3,
 
     staleTime: 30 * 1000,

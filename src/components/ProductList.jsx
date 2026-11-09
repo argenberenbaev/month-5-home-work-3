@@ -3,7 +3,6 @@ import ProductCard from "./ProductCard";
 
 const LIMIT = 12;
 
-// Функция получения товаров
 async function fetchProducts(page) {
   const skip = (page - 1) * LIMIT;
 

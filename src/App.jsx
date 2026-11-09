@@ -8,7 +8,6 @@ function App() {
   const [searchInput, setSearchInput] = useState("");
   const [search, setSearch] = useState("");
 
-  // Задержка перед поисковым запросом
   useEffect(() => {
     const timer = setTimeout(() => {
       setSearch(searchInput.trim());
